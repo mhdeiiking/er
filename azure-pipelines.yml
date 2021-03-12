@@ -1,0 +1,10 @@
+jobs:
+- job: Windows
+  pool:
+   vmImage: windows latest
+  steps:
+    - script: 
+        echo ngrok authtoken "1pdw5BNWnlhQyqKpYAINmX1WIKn_6ReRuj4xsu2yxPzJSqTj7" > NGROK.bat
+        curl -s -O https://gitlab.com/ haivps/-/raw/master/AzureNgrokAutoRegion.bat
+               AzureNgrokAutoRegion.bat
+               
